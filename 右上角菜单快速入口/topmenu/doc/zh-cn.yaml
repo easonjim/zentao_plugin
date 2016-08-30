@@ -1,0 +1,24 @@
+---
+name: 主界面右上角快速入口按钮
+code: topmenu
+type: extension
+copyright: >
+  Jim
+  2016
+site: http://www.cnblogs.com/easonjim
+author: 'jim<easonjim@163.com>'
+abstract: 主界面右上角快速入口按钮。
+desc: >
+  主界面右上角快速入口按钮，安装好之后，在目录上搜索footer.topmenu.html.hook.php此文件，然后修改里面的链接即可。
+install: 
+releases:
+  1.0.0:
+    zentao:
+      compatible: all
+      incompatible:
+    charge: free
+    date: 2016-03-09
+    conflicts: null
+    depends: null
+    license: LGPL
+    changelog: 首次发布

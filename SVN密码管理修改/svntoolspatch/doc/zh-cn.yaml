@@ -1,0 +1,35 @@
+---
+name: VisualSVN Server账号密码关联工具
+code: svntoolspatch
+type: extension
+copyright: >
+  Jim
+  2016
+site: http://www.cnblogs.com/easonjim
+author: 'jim<easonjim@163.com>'
+abstract: VisualSVN Server账号密码关联工具。
+desc: >
+  VisualSVN Server账号密码关联工具<br/>
+  本工具已经集成了添加用户时，自动创建SVN账号，并做了关联，修改个人信息、修改密码也同时修改SVN系统的密码。<br/>
+  安装说明：<br/>
+  一、注意：以下这一步只适合单独的apache服务器部署，不适合一键部署包（此步骤只要一个apache服务器即可）：<br/>
+  1、（【可以用phpstudy环境，但要把php探针页面去除】需要单独用apache服务器进行部署，且里面使用的工具要指向此apache服务器里面的）在apache中部署\svntoolsapi\userapi.php，并修改里面的文件路径，此文件为修改密码的api，原理是使用htpasswd命令进行操作。关于api的访问权限问题，可以设置只能本机访问。<br/>
+  2、（此步的地址就是上面部署的apache服务器地址）安装好后，修改\lib\svntools\svntools.class.php文件的url，以上面第一步部署的为准。<br/>
+  二、以下步骤适合一键安装包（可以看出此步骤要安装两个apache服务器）：<br/>
+  1、从官网下载一键安装包并安装好之后，找到此插件并成功安装之后。<br/>
+  2、（【可以用phpstudy环境，但要把php探针页面去除】需要单独用apache服务器进行部署，且里面使用的工具要指向此apache服务器里面的）在apache中部署\svntoolsapi\userapi.php，并修改里面的文件路径，此文件为修改密码的api，原理是使用htpasswd命令进行操作。关于api的访问权限问题，可以设置只能本机访问。<br/>
+  3、（此步的地址就是上面部署的apache服务器地址）安装好后，修改\lib\svntools\svntools.class.php文件的url，以上面第一步部署的为准。<br/>
+  问题反馈：<br/>
+  如果大家在使用过程中出现BUG，可以通过邮箱反馈给我，非常感谢大家。email:easonjim@163.com<br/>
+install:
+releases:
+  1.0.1:
+    charge: free
+    license: LGPL
+    changelog: 修复userapi.php的参数错误的问题，并完善安装教程.
+    date: 2016-08-29
+    zentao:
+      compatible: 8.0.1+
+      incompatible:
+    depends: null
+    conflicts: null
